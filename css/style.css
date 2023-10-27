@@ -1,0 +1,162 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+ body {
+     background: #27282c;
+
+ }
+
+ /* Custom Scrollbar*/
+
+ ::-webkit-scrollbar {
+     width: 0.625rem;
+ }
+
+ ::-webkit-scrollbar-track {
+     background: #27282c;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: #F0DB4F;
+ }
+
+ /* Custom Scrollbar End */
+
+ h1 {
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 45px;
+ }
+
+ h2,
+ h3,
+ p {
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+     margin: 15px;
+     padding: auto;
+ }
+
+ .chap-btn {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 1.875rem 31.25rem;
+     background-color: white;
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 1.5rem;
+     font-weight: 400;
+     padding: 10px 15px;
+     transition: 0.5s;
+ }
+
+ .chap-btn:hover {
+     background-color: var(--clr);
+     color: var(--clr);
+     letter-spacing: 0.25em;
+     box-shadow: 0 0 35px var(--clr);
+ }
+
+ .chap-btn::before {
+     content: "";
+     position: absolute;
+     inset: 2px;
+     background-color: #27282c;
+ }
+
+ .chap-btn span {
+     position: relative;
+     z-index: 1;
+ }
+
+ .chap-btn i {
+     position: absolute;
+     inset: 0;
+     display: block;
+ }
+
+ .chap-btn i::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 80%;
+     width: 10px;
+     height: 4px;
+     background-color: #27282c;
+     transform: translateX(-50%) skewX(325deg);
+     transition: 0.5s;
+ }
+
+ .chap-btn:hover i::before {
+     width: 20%;
+     left: 20%;
+ }
+
+ .chap-btn i::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     right: 80%;
+     width: 10px;
+     height: 4px;
+     background-color: #27282c;
+     transform: translateX(-50%) skewX(325deg);
+     transition: 0.5s;
+ }
+
+ .chap-btn:hover i::after {
+     width: 20%;
+     left: 80%;
+ }
+
+ /* CHAPTER2 CSS */
+ #center-box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .span {
+     color: red;
+ }
+
+ .wrapper {
+     position: absolute;
+     width: 45rem;
+     margin-top: 15rem;
+     background-color: black;
+     border-radius: 10px;
+     padding: 30px;
+ }
+
+ input {
+     outline: none;
+     border: none;
+     padding: 10px 10rem;
+ }
+
+ .wrapper-text {
+     color: #F0DB4F;
+ }
+
+ button {
+     color: #F0DB4F;
+     padding: 10px;
+     border: 2px solid #F0DB4F;
+     background: black;
+     display: block;
+     margin-top: 10%;
+     cursor: pointer;
+ }
