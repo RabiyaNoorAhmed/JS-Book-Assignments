@@ -25,6 +25,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #F0DB4F;
 }
+
 /* Custom Scrollbar End */
 
 h1 {
@@ -46,58 +47,65 @@ p {
     margin: 15px;
     padding: auto;
 }
+
 /* name design */
-.container{
+.container {
     width: 100%;
- 
+
 
 }
-span{
+
+span {
     color: #F0DB4F;
     text-shadow: 0 0 35px #F0DB4F;
 }
+
 /* buttons */
-.main-btn {
-    position: relative;
+#main-btn {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 1.875rem 33.25rem;
-    background-color: white;
-    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.main-btn {
+    margin-top: 16px;
+    position: relative;
+    background: white;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
+    letter-spacing: 0.1rem;
     font-weight: 400;
-    padding: 10px 15px;
+    padding: 10px 30px;
     transition: 0.5s;
 }
 
 .main-btn:hover {
     background-color: var(--clr);
-     color: var(--clr); 
+    color: var(--clr);
     letter-spacing: 0.12em;
     box-shadow: 0 0 35px var(--clr);
 }
-
 .main-btn::before {
     content: "";
     position: absolute;
     inset: 2px;
     background-color: #27282c;
 }
-
 .main-btn span {
     position: relative;
     z-index: 1;
 }
-
 .main-btn i {
     position: absolute;
     inset: 0;
     display: block;
 }
-
 .main-btn i::before {
     content: "";
     position: absolute;
@@ -109,12 +117,10 @@ span{
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5s;
 }
-
 .main-btn:hover i::before {
     width: 20%;
     left: 20%;
 }
-
 .main-btn i::after {
     content: "";
     position: absolute;
@@ -131,3 +137,4 @@ span{
     width: 20%;
     left: 80%;
 }
+

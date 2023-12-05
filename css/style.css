@@ -160,3 +160,18 @@
      margin-top: 10%;
      cursor: pointer;
  }
+
+ /* Chapter 5 prject */
+ #multiplication-table{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: #F0DB4F;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      margin: 10px 390px; 
+     font-size: 25px;
+    font-weight: 500; 
+    word-spacing: 10px;
+ }
